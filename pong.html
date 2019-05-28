@@ -1,0 +1,34 @@
+<! New lines starting from h1, including instructions and scoreline and endText>
+<html>
+    <head>
+        <style>
+            @import url(style.css);
+            p.highlight {
+                color: red;
+            }
+            svg {
+                background-color: rgb(41, 41, 36);
+            }
+        </style>
+        <script src="svgelement.js"></script>
+        <script src="observable.js"></script>
+        <script src="pong.js"></script>
+    </head>
+    <body>
+        <h1>Pong</h1>
+        <p>
+            Instructions: You're controlling the right paddle. Move the mouse upwards to move the paddle upwards,
+            move the mouse downwards to move the paddle downwards.
+        </p>
+        <p>
+            P.S: You can't move left or move right.
+        </p>
+        <p id="scoreline">
+            Score 0:0
+        </p>
+        <p id="endText">
+
+        </p>
+        <svg id="canvas" width="600" height="600"/>
+    </body>
+</html>
